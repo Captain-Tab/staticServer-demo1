@@ -44,7 +44,7 @@ var server = http.createServer(function(request, response) {
   // 设置响应头的文件类型
   response.setHeader(
     "Content-Type",
-    `${filesType[suffix]} || 'text/html'; charset=utf-8`
+    `${filesType[suffix] || "text/html"}; charset=utf-8`
   );
   let content;
   try {
