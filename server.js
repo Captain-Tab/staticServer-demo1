@@ -35,7 +35,7 @@ var server = http.createServer(function(request, response) {
   const suffix = requestPath.substring(index);
   // 使用hash哈希表的数据结构，映射得到文件类型
   const filesType = {
-    ".html": "tex/html",
+    ".html": "text/html",
     ".css": "text/css",
     ".js": "text/javascript",
     ".png": "image/png",
